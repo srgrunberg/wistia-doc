@@ -12,7 +12,7 @@ post_intro: <p>Your video content is truly powerful - and Wistia customization c
 
 After uploading a new video, the *customization* step gets it ready for the big
 time. Open the customization panel by selecting *Customize* from under the
-*Video Actions* menu.
+<span class="action_menu">Video Actions</span> menu.
 
 {% post_image hashed_id: '1cb27f6a4d8a302de3f2e6fc72c44b2ff15236a1', class: 'center' %}
 
