@@ -3,7 +3,7 @@ layout: post
 title: Customizing Your Video
 description: Drive more interaction and better engagement with your content using Wistia video customization features.
 category: Video
-post_intro: <p>Your video content is truly powerful - and Wistia customization can ensure engagement with your audience, which drives business for you.</p><p>Once you customize your video, you can also choose to <a href="http://wistia.com/doc/embedding">embed it</a> with your customizations.</p>
+post_intro: <p>Your video content is truly powerful - and Wistia customization can ensure engagement with your audience, which drives business for you.</p><p>This article will cover the customization options for your video, and how to make them work for you.</p><p>Once you customize your video, you can also choose to <a href="http://wistia.com/doc/embedding">embed it</a> with your customizations.</p>
 ---
 
 ## The Customize Panel
@@ -153,3 +153,124 @@ to include them by default.
 
 If your video does not have captions, you will instead be presented with the
 option to order a transcript or upload your own captions SRT file.
+
+## Public Preview
+
+See that lonely button at the bottom of your Customize Panel? 
+
+Once your video is looking the way you want, the 
+<span class="faux_button">Public Preview</span> button will
+allow you to see the video as your viewers will see it.
+
+{% post_image hashed_id: '63719fcec549ffe1f10c1808074902912f3686f6', width: 300 %}
+
+Selecting the <span class="faux_button">Public Preview</span> mode will
+temporarily close the customization panel and you will see exactly what your
+viewers will experience on your Wistia page!
+
+## Advanced Customize Features
+
+There are a few powerful customization features we've added to make consistency
+and organization a little easier.
+
+### Set Project Defaults
+
+If you upload your videos in batches, or have lots of videos in your Projects, 
+this one is for you.
+
+{% post_image hashed_id: 'd61de26d6486aad9f0e455daccf69ca1d123cff1', class: 'center' %}
+
+Once you have the customizations for your first video all set, select *Set
+Project Defaults* from the <span class="action_menu">Video Actions</span> menu.
+
+{% post_image hashed_id: '797314b431652f99333c42e735c290bc82b93292', class: 'center' %}
+
+The *Set Project Defaults* screen has two options:
+
+* Apply the customization settings to all videos currently in the Project.
+* Apply the customization settings to all future videos added to the Project.
+
+These are **not** mutually exclusive - you may choose to use both. This means
+once you apply a set of customizations to a single video, you can apply them
+automatically to all the videos in the Project, and all the videos going
+forward.
+
+### Load Settings
+
+If your videos *across* Projects share common settings, this one will save you
+lots of time.
+
+{% post_image hashed_id: '67a73a2a473ff11373d1dcc7217758c3ebee7f07', class: 'center' %}
+
+If you've just uploaded a new video, or want to add the customizations from one
+video onto another video, you should *load settings*. Inside the 
+[Customize Panel](#the_customize_panel), select the *Load Settings* link at the
+top.
+
+{% post_image hashed_id: '397e8921b62ca9b08b609c58c9fc9e94ac63a191', class: 'center' %}
+
+The *load settings* includes a list of your Projects, and the videos within
+those projects. When you select a specific video, the copy underneath will
+describe the customizations on the video, which if you ask me is pretty slick.
+
+## Customization FAQ
+
+**Q: I have 135 videos embedded on my website...do I have to re-embed everything? HALP!**
+
+A: No, all of your embeds will continue to work exactly as they always have.
+You can update your embeds to the new *customization* paradigm at your
+own pace.
+
+
+**Q: I customized my video, but it isn’t updating on my website....why not?**
+
+A: Live updating of embedded videos is *only* available for embeds created using 
+the Customize & Embed paradigm. Previously embedded videos (before Customize) 
+will not auto-update when you customize them. 
+
+If you generate a new customized embed code, this will then auto-update the 
+next time you make changes to your customizations.
+
+
+**Q: In the SuperEmbed Builder, I had an account-wide default profile for my 
+embeds...where is that now?**
+
+A: We have made this functionality way more powerful with the ability to 
+[load settings](#advanced_customize_features) (found at the top of the Customize panel) 
+from any video in your account as well as the ability to create Project Default 
+profiles (found under “Set Project Defaults” in the Video Actions menu).
+
+
+**Q: Where did “Change Thumbnail” go?**
+
+A: Change thumbnail is now found under the [Appearance tab](#appearance) in the 
+Customize panel.
+
+
+**Q: Where did my *Email marketing* menu item go?**
+
+A: With Customize, we have centralized all embedding of all types in the *Embed* panel. 
+Select click on *Embed* under the <span class='action_menu'>Video Actions</span>
+menu. [See more on embedding]({{ '/embedding' | post_url }}).
+
+
+**Q: Where did my *Captions* menu item go?**
+
+A: Management of captions and transcriptions is now all done from within the 
+Customize Panel under the [Captions tab](#captions).
+
+
+**Q: What is “Public Preview”?**
+
+A: *Public Preview* allows you to see your video as a viewer would see it when 
+clicking through from a link you may have shared via email, twitter, or Facebook.
+
+
+**Q: You said customizations would show up on Twitter, but what about
+Facebook?**
+
+A: Unfortunately, because of the limitations of Facebook embedding, we are not 
+able to push all of your awesome video customizations over there. That being 
+said, we are hopeful that Facebook will start to update their methods for 
+pulling video information so that we can get the customizations flowing!
+
