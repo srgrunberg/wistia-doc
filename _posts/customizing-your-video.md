@@ -231,6 +231,15 @@ will not auto-update when you customize them.
 If you generate a new customized embed code, this will then auto-update the 
 next time you make changes to your customizations.
 
+**Q: What if I want my videos to appear differently (i.e. have different
+customizations) in two different places?**
+
+A: Each version of the video in your account will only have one set of
+customizations. To have the same video with *different customizations*, you
+will need to create a new instance of the video.
+
+The quickest way to do this is with the [Copy Media]({{ '/media#copy_video' | post_url}})
+tool. Create a copy of your video, and start applying new customizations to it!
 
 **Q: In the SuperEmbed Builder, I had an account-wide default profile for my 
 embeds...where is that now?**
