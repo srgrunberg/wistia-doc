@@ -50,7 +50,7 @@ browsers, this is the recommended way to access the player API.
 Put the following anywhere in the HTML document:
 
 {% codeblock wistia_js.js %}
-<script src="//fast.wistia.net/static/iframe-api-v1.js"></script>
+<script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
 {% endcodeblock %}
 
 {{ "The iframe-api script should be placed after all the iframe embeds on your page (ie near the bottom). Once it has run, all Wistia iframes on the page will have the `wistiaApi` property." | note }}
