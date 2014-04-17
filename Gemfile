@@ -15,6 +15,14 @@ gem 'tire', '~> 0.4.2'
 gem 'rack-rewrite', '~> 1.5.0'
 gem 'unicorn'
 
+group :development do
+  gem 'guard'
+  gem 'guard-sass'
+  gem 'guard-coffeescript'
+  gem 'guard-concat'
+  gem 'therubyracer' #for Coffeescript compiling
+end
+
 group :test do
   gem 'rspec', '~> 2.13.0'
   gem 'rack-test', '~> 0.6.2'
