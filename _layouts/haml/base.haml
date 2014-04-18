@@ -5,8 +5,8 @@
 %html{ :xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'en', :lang => 'en' }
   %head
     %meta{ 'http-equiv' => 'Content-Type', :content => "text/html;charset=utf-8" }
-    %link{ rel: 'stylesheet', type: 'text/css', href: "{{ '/stylesheets/screen' | stylesheet_url }}" }
-    %script{ type: 'text/javascript', src: "{{ '/javascripts/jquery.min' | javascript_url }}" }
+    %link{ rel: 'stylesheet', type: 'text/css', href: "{{ 'stylesheets/screen' | stylesheet_url }}" }
+    %script{ type: 'text/javascript', src: "{{ 'javascripts/jquery.min' | javascript_url }}" }
     {% if page.developers %}
     %script{ type: "text/javascript", src: "//use.typekit.net/pft0gev.js" } 
     %script{ type: "text/javascript" } try{Typekit.load();}catch(e){}
@@ -28,8 +28,7 @@
 
     {% include footer.html %}
 
-    / scripts and such
-    %script{ src: "{{ '/javascripts/search_text' | javascript_url }}" }
+    %script{ src: "{{ 'javascripts/search_text' | javascript_url }}" }
     :plain
       <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KSJ3B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

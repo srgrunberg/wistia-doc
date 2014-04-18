@@ -1,3 +1,4 @@
+# JS to add fixed sidebar navigation for post pages
 class NavBar
   constructor: ->
     @mainTitle = $('.post_title > h1')

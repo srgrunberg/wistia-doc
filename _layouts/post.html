@@ -28,9 +28,9 @@ type: post
       {% endif %}
     </div>
   </div>
+  <script src="{{ 'javascripts/jquery.scrollTo' | javascript_url }}"></script>
+  <script src="{{ 'javascripts/jquery.nav' | javascript_url }}"></script>
 </div>
-<script src="{{ '/javascripts/jquery.scrollTo' | javascript_url }}"></script>
-<script src="{{ '/javascripts/jquery.nav' | javascript_url }}"></script>
 {% if page.api == true %}
 {% include toplink.html %}
 <script type='text/javascript'>

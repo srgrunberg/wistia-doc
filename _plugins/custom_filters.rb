@@ -8,11 +8,11 @@ module Jekyll
     end
 
     def stylesheet_url(input)
-      "#{$config.basepath}#{input}.css"
+      "#{$config.basepath}/#{input}.css"
     end
 
     def javascript_url(input)
-      "#{$config.basepath}#{input}.js"
+      "#{$config.basepath}/#{input}.js"
     end
 
     def image_url(input)

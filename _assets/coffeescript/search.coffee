@@ -1,3 +1,4 @@
+# JS to perform search on search page
 class Search
   constructor: ->
     @query = @getQuery()
