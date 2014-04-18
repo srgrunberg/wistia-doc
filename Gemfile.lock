@@ -52,11 +52,14 @@ GEM
     guard-coffeescript (1.4.0)
       coffee-script (>= 2.2.0)
       guard (>= 1.1.0)
+    guard-compass (1.1.0)
+      compass (>= 0.10.5)
+      guard (~> 2.0)
     guard-concat (0.0.3)
       guard (>= 1.1.0)
-    guard-sass (1.4.0)
-      guard (>= 1.1.0)
-      sass (>= 3.1)
+    guard-haml (1.1.1)
+      guard (~> 2.0)
+      haml (>= 3.0)
     haml (3.1.8)
     hashr (0.0.22)
     highline (1.6.19)
@@ -172,8 +175,9 @@ DEPENDENCIES
   foreman (~> 0.63.0)
   guard
   guard-coffeescript
+  guard-compass
   guard-concat
-  guard-sass
+  guard-haml
   haml (~> 3.1.6)
   jekyll (~> 1.0)
   json

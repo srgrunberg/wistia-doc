@@ -17,9 +17,10 @@ gem 'unicorn'
 
 group :development do
   gem 'guard'
-  gem 'guard-sass'
+  gem 'guard-compass'
   gem 'guard-coffeescript'
   gem 'guard-concat'
+  gem 'guard-haml'
   gem 'therubyracer' #for Coffeescript compiling
 end
 
