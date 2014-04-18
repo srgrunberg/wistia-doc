@@ -1,7 +1,7 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard 'coffeescript', :input => '_assets/js'
+guard 'coffeescript', input: '_assets/js'
 
 # This will concatenate the javascript files specified in :files to js/app.js
 guard :concat, type: "js", files: %w(jquery.min post_content_nav search search_text devhq toplink image_layout jquery.nav jquery.scrollTo), input_dir: "_assets/js", output: "app"
@@ -33,6 +33,10 @@ guard :compass
 # notifications: true                send notifictions to Growl/libnotify/Notifu
 # haml_options: { ugly: true }    pass options to the Haml engine
 
-guard :haml, :input => '_layouts/haml', :output => '_layouts' do
+guard :haml, input: '_layouts/haml', output: '_layouts' do
+  watch(/^.+(\.html\.haml)$/)
+end
+
+guard :haml, input: '_includes/haml', output: '_includes' do
   watch(/^.+(\.html\.haml)$/)
 end
