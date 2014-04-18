@@ -40,3 +40,7 @@ end
 guard :haml, input: '_includes/haml', output: '_includes' do
   watch(/^.+(\.html\.haml)$/)
 end
+
+guard :haml, input: '_static_pages', output: './' do
+  watch(/^.+(\.html\.haml)$/)
+end
