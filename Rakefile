@@ -1,56 +1,19 @@
 require 'rspec/core/rake_task'
 require 'date'
 
-
-# HT: http://mikeferrier.com/2011/04/29/blogging-with-jekyll-haml-sass-and-jammit/
-desc "Pre Jekyll rendering stuff"
-task :pre_jekyll do
-  puts Time.now.to_s
-  puts "Doing pre-Jekyll schtuffs ..."
-
-  print "  Compass Compiling ... \n"
-  system %{ compass compile }
-  puts "done."
-
+desc "Get Wistia Global Header / Footer"
+task :fetch do
   print "  Getting the Official Wistia Header/Footer ... "
   system %{
     wget -q -O _includes/header.html http://wistia.com/common/header;
     wget -q -O _includes/footer.html http://wistia.com/common/footer
   }
   puts "done."
-
-  print "  Rendering Haml includes ... "
-  system(%{
-    cd _includes/haml &&
-    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html -E utf-8; done
-  })
-  puts "done."
-
-  print "  Rendering Haml layouts ... "
-  system(%{
-    cd _layouts/haml &&
-    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html -E utf-8; done
-  })
-  puts "done."
-
-  print "  Rendering Haml static pages ... "
-  system(%{
-    cd _static_pages &&
-    for f in *.haml; do [ -e $f ] && haml $f ../${f%.haml}.html -E utf-8; done
-  })
-  puts "done."
-
-  puts "    All done."
 end
 
 desc "Launch preview environment"
-task :preview => :pre_jekyll do
+task :preview do
   system "foreman start"
-end
-
-desc "Build the site"
-task :build => :pre_jekyll do
-  system "bundle exec jekyll build"
 end
 
 # note: this is only for production, be careful it will erase your shit
