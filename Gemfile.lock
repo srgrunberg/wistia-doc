@@ -55,8 +55,6 @@ GEM
     guard-compass (1.1.0)
       compass (>= 0.10.5)
       guard (~> 2.0)
-    guard-concat (0.0.3)
-      guard (>= 1.1.0)
     guard-haml (1.1.1)
       guard (~> 2.0)
       haml (>= 3.0)
@@ -176,7 +174,6 @@ DEPENDENCIES
   guard
   guard-coffeescript
   guard-compass
-  guard-concat
   guard-haml
   haml (~> 3.1.6)
   jekyll (~> 1.0)
