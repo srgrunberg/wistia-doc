@@ -22,6 +22,7 @@ group :development do
   gem 'guard-haml'
   gem 'therubyracer' #for Coffeescript compiling
   gem 'guard-jekyll'
+  gem 'guard-shotgun', :git => 'https://github.com/rchampourlier/guard-shotgun.git'
 end
 
 group :test do

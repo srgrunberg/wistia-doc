@@ -43,3 +43,10 @@ guard 'jekyll' do
   watch /.*/
   ignore /_site/
 end
+
+group :server do
+  guard :shotgun do
+    watch 'app.rb'
+    watch 'config.ru'
+  end
+end
