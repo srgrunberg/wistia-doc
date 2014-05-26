@@ -38,3 +38,8 @@ end
 guard :haml, input: '_static_pages', output: './', run_at_start: true do
   watch(/^.+(\.html\.haml)$/)
 end
+
+guard 'jekyll' do
+  watch /.*/
+  ignore /_site/
+end

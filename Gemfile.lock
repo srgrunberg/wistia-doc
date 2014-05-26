@@ -56,6 +56,9 @@ GEM
     guard-haml (1.1.1)
       guard (~> 2.0)
       haml (>= 3.0)
+    guard-jekyll (1.4.0)
+      guard (>= 1.1.0)
+      jekyll
     haml (3.1.8)
     hashr (0.0.22)
     highline (1.6.19)
@@ -183,6 +186,7 @@ DEPENDENCIES
   guard-coffeescript
   guard-compass
   guard-haml
+  guard-jekyll
   haml (~> 3.1.6)
   jekyll (~> 2.0)
   json

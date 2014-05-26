@@ -21,6 +21,7 @@ group :development do
   gem 'guard-coffeescript'
   gem 'guard-haml'
   gem 'therubyracer' #for Coffeescript compiling
+  gem 'guard-jekyll'
 end
 
 group :test do
