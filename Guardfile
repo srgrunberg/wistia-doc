@@ -27,16 +27,16 @@ guard :compass
 # notifications: true                send notifictions to Growl/libnotify/Notifu
 # haml_options: { ugly: true }    pass options to the Haml engine
 
-guard :haml, input: '_layouts/haml', output: '_layouts', run_at_start: true do
-  watch(/^.+(\.html\.haml)$/)
-end
-
-guard :haml, input: '_includes/haml', output: '_includes', run_at_start: true do
-  watch(/^.+(\.html\.haml)$/)
-end
-
-guard :haml, input: '_static_pages', output: './', run_at_start: true do
-  watch(/^.+(\.html\.haml)$/)
+group :haml do
+  guard :haml, input: '_layouts/haml', output: '_layouts' do
+    watch(/^.+(\.html\.haml)$/)
+  end
+  guard :haml, input: '_includes/haml', output: '_includes' do
+    watch(/^.+(\.html\.haml)$/)
+  end
+  guard :haml, input: '_static_pages', output: './' do
+    watch(/^.+(\.html\.haml)$/)
+  end
 end
 
 guard 'jekyll' do
