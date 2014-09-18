@@ -106,3 +106,9 @@ wistiaEmbed = Wistia.embed("pqmkpbr89t", {
   }
 });
 </script>
+
+## Caption Speeds
+
+Wistia currently offers two different turnaround times for captions: 24 hour, which costs $5 per minute, and 4 business day, which costs $3 per minute. By default, all Wistia accounts are set to use the 24 hour turnaround time. If you would like to change the turnaround speed for your account, please fill out your information in the form below.
+
+<center><iframe src="https://docs.google.com/forms/d/1AQIamKPCZ09v2i3QMwFXJkswjfUEgzg7_uqhpVAXBvc/viewform?embedded=true" width="400" height="725" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></center>
